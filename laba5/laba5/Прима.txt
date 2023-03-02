@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[8][8] = { {0, 2,  0,  8,  2,  0,  0, 0}, 
+                      {2, 0,  3,  10, 5,  0,  0, 0},
+                      {0, 3,  0,  0,  12, 0,  0, 7},
+                      {8, 10, 0,  0,  14, 3,  1, 0},
+                      {2, 5,  12, 14, 0,  11, 4, 8},
+                      {0, 0,  0,  3,  11, 0,  6, 0},
+                      {0, 0,  0,  1,  4,  6,  0, 9},
+                      {0, 0,  7,  0,  8,  0,  9, 0} };
+
+    int n = 8;
+    bool* visited = new bool[n];
+    memset(visited, false, sizeof(bool) * n);   // заполняем все false
+    visited[0] = true;  // открываем доступ первой строки матрицы
+
+    for (int l = 0; l < n - 1; l++) {   // l < n -1 потому что рёбер на 1 меньше
+        int minx = -1, miny = -1;   
+        for (int i = 0; i < n; i++) {
+            if (visited[i] == true) {   // проверяем доступна ли строка для проверки
+                for (int j = 0; j < n; j++) {
+                    if (!visited[j] && arr[i][j] > 0 && (miny == -1 || arr[i][j] < arr[miny][minx])) {  // если столбец не посещён и элемент в нём больше 0 и либо miny = -1 либо текущий элемент меньше прошлого назначенного
+                        miny = i, minx = j; // minx строка miny столбец
+                    }
+                }
+            }
+        }
+        visited[minx] = true;
+        cout << miny + 1 << " -> " << minx + 1 << endl; // +1 потому что массив
+    }
+
+    system("pause");
+}

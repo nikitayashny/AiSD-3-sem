@@ -1,0 +1,29 @@
+﻿Сборка начата 13.10.2022 10:55:36.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\User\Desktop\АиСД\laba5\laba5\laba5.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Создание каталога "C:\Users\User\Desktop\АиСД\laba5\x64\Debug\".
+         Создание каталога "x64\Debug\laba5.tlog\".
+       InitializeBuildStatus:
+         Создание "x64\Debug\laba5.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt laba5.cpp
+         laba5.cpp
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(19,1): error C2598: тип связывания должен определяться в глобальной области видимости
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(34,1): error C2598: тип связывания должен определяться в глобальной области видимости
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(29,1): error C2951: Объявления шаблон разрешены только в глобальной области, области пространства имен и области класса
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(29,1): fatal error C1903: не удается восстановить после предыдущих ошибок; остановка компиляции
+     1>Сборка проекта "C:\Users\User\Desktop\АиСД\laba5\laba5\laba5.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+       "C:\Users\User\Desktop\АиСД\laba5\laba5\laba5.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(19,1): error C2598: тип связывания должен определяться в глобальной области видимости
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(34,1): error C2598: тип связывания должен определяться в глобальной области видимости
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(29,1): error C2951: Объявления шаблон разрешены только в глобальной области, области пространства имен и области класса
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(29,1): fatal error C1903: не удается восстановить после предыдущих ошибок; остановка компиляции
+
+    Предупреждений: 0
+    Ошибок: 4
+
+Прошло времени 00:00:00.59
